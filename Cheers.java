@@ -8,12 +8,11 @@ public class Cheers {
 
                 cheer = cheer.toUpperCase(); // Convert the cheer word to uppercase.
                 int cheerLength = cheer.length(); 
+                String anLetters = "AEFHILMNORSX";
 
                 for (int i = 0; i < cheerLength; i++) { // Loop through each character in the cheer word.
                 
-                        if (cheer.charAt(i) == 'A' || cheer.charAt(i) == 'E' || cheer.charAt(i) == 'F' || cheer.charAt(i) == 'H'
-                           || cheer.charAt(i) == 'I' || cheer.charAt(i) == 'L' || cheer.charAt(i) == 'M' || cheer.charAt(i) == 'N'
-                           || cheer.charAt(i) == 'O' || cheer.charAt(i) == 'R' || cheer.charAt(i) == 'S' || cheer.charAt(i) == 'X') {
+                        if (anLetters.indexOf(cheer.charAt(i)) != -1) {
 
                                 System.out.println("Give me an " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");
                         }

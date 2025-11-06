@@ -25,7 +25,7 @@ public  class  TestRandom {
 
 		double ratio;
 
-		if(countAboveHalf > countBelowHalf) { // To get a ratio always <= 1 and avoid division by zero.
+		if(countAboveHalf > countBelowHalf) { // To get a ratio always <= 1 and and avoid division by zero.
 
 			ratio = countBelowHalf / (double) countAboveHalf; 
 		} else {

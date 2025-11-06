@@ -17,15 +17,15 @@ public class Cheers {
 
                                 System.out.println("Give me an " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");
                         }
-                        else {
+                        else { // For consonants that are not preceded by a vowel sound.
                                 System.out.println("Give me a  " + cheer.charAt(i) + ": " + cheer.charAt(i) + "!");
                         }
                 }
 
                 System.out.println("What does that spell?");
 
-                for (int j = 0; j < repetitions; j++) {
-                        System.out.println(cheer + "!!!");
+                for (int j = 0; j < repetitions; j++) { // Repeat the cheer the specified number of times.
+                        System.out.println(cheer + "!!!"); 
                 }
 
         }

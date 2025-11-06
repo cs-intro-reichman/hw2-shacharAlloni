@@ -6,7 +6,7 @@ public class TimeCalc {
 
         char firstNum = tempTime.charAt(0);
         char secondNum = tempTime.charAt(1);
-        String combined = "" + firstNum + secondNum;  
+        String combined = "" + firstNum + secondNum;
 
         int hours = Integer.parseInt(combined); // Finding hours in integer format.
     
@@ -25,14 +25,14 @@ public class TimeCalc {
         int newHours = totalHours % 24; // New hours in 24-hour format.
         int newMinutes = totalMinutes - (totalHours * 60); // New minutes calculation.
 
-        if(newHours < 10) {
+        if(newHours < 10) { // Formatting output to always have two digits for hours.
             System.out.print("0");
         }
 
         System.out.print(newHours + ":");
 
 
-        if (newMinutes < 10) {
+        if (newMinutes < 10) { // Formatting output to always have two digits for minutes.
             System.out.print("0");
         }
 

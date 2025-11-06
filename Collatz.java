@@ -9,7 +9,7 @@ public class Collatz {
 		boolean notReachedOne = true;
 		int countMoves = 1; // Counts the number of steps in the sequence.
 
-		if (mode.equals("v")) {
+		if (mode.equals("v")) { // Checking mode.
 
 
 			for (int i = 1; i <= limNum; i++) { 
